@@ -1,0 +1,13 @@
+﻿<Window x:Class="test.BreakColumnsView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Разделение Пилонов" Height="300" Width="400">
+    <Grid>
+        <DataGrid Name="ColumnsGrid" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Пилон" Binding="{Binding ElementId}" />
+                <DataGridTextColumn Header="Количество делений" Binding="{Binding PartsCount}" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
