@@ -8,10 +8,7 @@ using test;
 [Transaction(TransactionMode.Manual)]
 public class BreakColumnsCommand : IExternalCommand
 {
-    public Result Execute(
-        ExternalCommandData commandData,
-        ref string message,
-        ElementSet elements)
+    public Result Execute(ExternalCommandData commandData, ref string message, ElementSet elements)
     {
         UIDocument uiDoc = commandData.Application.ActiveUIDocument;
         Document doc = uiDoc.Document;
